@@ -1,0 +1,9 @@
+body {
+    background-color:blanchedalmond;
+}
+ul .bullets {
+    list-style:armenian;
+}
+li:nth-child(2n) {
+    color:chocolate;
+}
