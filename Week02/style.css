@@ -73,6 +73,9 @@ footer {
     }
 }
 @media only screen and (max-width:600px) {
+    header{
+        line-height:2em;
+    }
     main {
         display:grid;
         grid-template-columns: 1fr;
