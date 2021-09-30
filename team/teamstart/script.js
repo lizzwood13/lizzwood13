@@ -1,5 +1,4 @@
 
-// most popular background color
 document.getElementById('pop').style.backgroundColor="#FFCF2D";
 
 document.getElementById("popsign").style.backgroundColor="#FFCF2D";
@@ -15,7 +14,6 @@ function appearIntervalLeft()
     card.hidden = true;
     setTimeout(() => {
         card.hidden = false;
-        card.fadeIn("slow");
     }, 1000);
 }
 function appearIntervalMiddle()
@@ -24,7 +22,6 @@ function appearIntervalMiddle()
     card.hidden = true
     setTimeout(() => {
         card.hidden = false;
-        card.fadeIn("slow");
     }, 2000);
 }
 function appearIntervalRight()
@@ -33,7 +30,6 @@ function appearIntervalRight()
     card.hidden = true;
     setTimeout(() => {
         card.hidden = false;
-        card.fadeIn("slow");
     }, 3000);
 }
 
