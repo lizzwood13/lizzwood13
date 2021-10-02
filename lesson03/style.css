@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Grechen+Fuemen&display=swap');
+h1, h2, h3, #typotitle {
+    font-family: 'Grechen Fuemen', cursive;
+}
+p, ul, ol {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body {
+    background-color: #d3d3d3;
+}
+#content {
+    margin:auto;
+    max-width: 500px;
+    background-color: white;
+    padding: 15px;
+}
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+}
+#lbbox {
+    background-color:#8bd2e1;
+    padding: 10px ;
+}
+#lgbox {
+    background-color:#d3d3d3;
+    padding: 10px ;
+}
+#yelbox {
+    background-color:#ffc300;
+    padding: 10px ;
+}
+#dbbox {
+    background-color:#00008b;
+    padding: 10px ;
+}
+#dgbox {
+    background-color:#36454f;
+    padding: 10px ;
+}
+@media only screen and (max-width:500px) {
+    nav ul {
+        list-style-type: none;
+        display:inline;
+        justify-content: center; 
+    }
+}
