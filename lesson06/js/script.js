@@ -37,3 +37,8 @@ function myFunction() {
       an.classList.remove("pancakes");
       an.style.display="none";
   }
+  WebFont.load({
+    google: {
+      families: ['Droid Sans', 'Droid Serif']
+    }
+  });

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Grechen+Fuemen&display=swap');
+h1, h2, h3, th {
+    font-family: 'Grechen Fuemen', cursive;
+    color: #00008b;
+}
+p, ul, ol {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+p {
+    color: #36454f;
+}
+body {
+    background-color: #d3d3d3;
+}
+#content {
+    margin: 0 auto;
+    max-width: 750px;
+    background-color: white;
+    padding: 15px;
+}
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+}
+
+nav a {
+    float:left;
+    display: block;
+    padding: 9px;
+    justify-content: space-between;
+    background-color: #8bd2e1;
+    color:#00008b;
+    text-decoration: none;
+    margin: -1px;
+}
+.active {
+    background-color: white;
+    color: #36454f;
+} 
+#banner {
+    text-align:center;
+    margin:-8px -8px 20px -8px;
+}
+#title {
+    background-color: #d3d3d3;
+    margin: -15px;
+    color: #00008b;
+    padding: 20px;
+}
+#title img {
+    float: left;
+    padding: 10px;
+}
+#title p {
+    padding:0 0 0 120px;
+}
+nav {
+    background-color: #8bd2e1;
+    margin: -15px;
+    padding: 1px;
+}
+nav a:hover {
+    background-color: #00008b;
+    color: #ffc300;
+}
+picture img {
+    width:100%;
+    height:200px;
+}
+#instagram, #facebook, #linkedin {
+    width:40px;
+    height:40px;
+}
+#preston-summary {
+    display:grid;
+    grid-template-columns: 20px 200px auto;
+    grid-template-rows: 20px 175px auto;
+}
+#preston-ws {
+    grid-column:2/3;
+    grid-row:2/3;
+    background-color: #d3d3d3;
+    padding: 15px;
+    overflow:hidden;
+    margin-bottom: 15px;
+    line-height: 8px;
+}
+#preston-ws h3 {
+    margin:0;
+}
+#preston-hero {
+    grid-column:1/4;
+    grid-row:1/4;
+}
+#forecast {
+    width:100%;
+    height:auto;
+}
+#preston-article {
+    background-color:#d3d3d3;
+    width:auto;
+    padding: 10px 20px;
+    margin:15px 0;
+    overflow:hidden;
+}
+#preston-article img {
+    max-width:25%;
+    float:right;
+    padding: 15px 0 0 20px;
+}
+#location {
+    width: 50%;
+    height: 150px;
+}
+footer {
+    background-color: #d3d3d3;
+    display:flex;
+    column-gap: 15%;
+    padding: 10px 20px 30px 20px;
+    margin:15px -15px -15px -15px;
+}
+footer div{
+    margin:-15px;
+}
+#footer-bar {
+    padding: 0 20px;
+    margin:-10px;
+    background-color: #8bd2e1;
+    position:fixed;
+    width:100%;
+    left:0;
+    bottom:0;
+    text-align:center;
+}
+.icon {
+    display:none;
+}
+i {
+    color:#36454f;
+}
+table {
+    border:1px solid #36454f;
+    text-align: center;
+    margin:0 auto;
+    width: 75%;
+    background-color:#ffc300;
+}
+td {
+    border:1px solid #36454f;
+    padding: 15px 15px 5px 15px;
+    margin: 10px;
+    background-color:white;
+}
+@media only screen and (max-width:780px) {
+    body {
+        margin:0 0 25px 0;
+    }
+    .topnav a, #location{
+        display: none;
+    }
+    .topnav a.icon {
+      display:inline-block;
+      
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #preston-summary {
+        display:block;
+    }
+}
+@media only screen and (max-width: 590px) {
+    #preston-forecast{
+        display: none;
+    }
+    footer {
+        display:grid;
+        grid-template-rows: auto auto;
+        padding-left: 30px;
+    }
+    footer div {
+        grid-row:1;
+    }
+    #instagram, #facebook, #linkedin {
+        display:none;
+    }
+    #preston-article img {
+        float:none;
+        max-width:90%;
+        padding:20px;
+    }
+    #preston-ws {
+        text-align: center;
+    }
+  }
