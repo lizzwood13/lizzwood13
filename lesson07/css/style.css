@@ -173,18 +173,6 @@ td {
     animation-duration: 500ms;
 }
 
-@keyframes bounce {
-    0% {
-        transform: scale(0);
-    }
-
-    90% {
-        transform: scale(110%);
-    }
-    100% {
-        transform: scale(100%);
-    }
-}
 
 [data-src]:hover {
     box-shadow: 5px 5px 5px black;
