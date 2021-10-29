@@ -25,11 +25,9 @@ nav ul {
     justify-content: space-between;
     text-align: center;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 auto;
 }
-
 nav a {
-    float:left;
     display: block;
     padding: 9px;
     justify-content: space-between;
@@ -193,21 +191,21 @@ figure {
         display: none;
     }
     .topnav a.icon {
-      display:inline-block;
-      
+      display:block;
+      width: 100%;
+      margin:0;
     }
     .topnav.responsive {
         position: relative;
     }
     .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+      position: relative;
+
     }
     .topnav.responsive a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
     }
     #preston-summary {
         display:block;
