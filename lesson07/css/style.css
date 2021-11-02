@@ -29,7 +29,7 @@ nav ul {
 }
 nav a {
     display: block;
-    padding: 9px;
+    padding: 9px 15px;
     justify-content: space-between;
     background-color: #8bd2e1;
     color:#00008b;
@@ -192,7 +192,7 @@ figure {
     }
     .topnav a.icon {
       display:block;
-      width: 100%;
+      max-width: 100%;
       margin:0;
     }
     .topnav.responsive {
@@ -217,7 +217,10 @@ figure {
         display:block;
         text-align:center;
         margin:0;
-        padding:0 10px;
+        padding:0;
+    }
+    nav a {
+        margin:0px;
     }
 .gallery{
     display: grid;
