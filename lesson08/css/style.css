@@ -11,11 +11,11 @@ p {
     color: #36454f;
 }
 body {
-    background-color: #d3d3d3;
+    background-color: gainsboro;
 }
 #content {
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 850px;
     background-color: white;
     padding: 15px;
 }
@@ -45,7 +45,7 @@ nav a {
     margin:-8px -8px 20px -8px;
 }
 #title {
-    background-color: #d3d3d3;
+    background-color: gainsboro;
     margin: -15px;
     color: #00008b;
     padding: 20px;
