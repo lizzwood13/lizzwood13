@@ -20,24 +20,23 @@ body {
     padding: 15px;
 }
 nav ul {
-    list-style-type: none;
-    display:flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: 0;
-    padding: 0 10px;
+    list-style: none;
+    padding: 0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
-nav a {
-    float:left;
+nav ul li a{
     display: block;
-    padding: 8px;
-    justify-content: space-between;
+    text-decoration: none;
+    text-align:center;
+    padding:10px;
     background-color: #8bd2e1;
     color:#00008b;
     text-decoration: none;
+    margin: -1px;
 }
-  
 #title {
     display: grid;
     grid-template-columns: 120px auto;
