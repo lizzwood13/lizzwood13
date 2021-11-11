@@ -1,0 +1,58 @@
+body,
+html {
+  margin: 0 auto;
+  background-color:lightskyblue;
+}
+
+header,
+h1 {
+  background-color: gainsboro;
+  color: black;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+header {
+  border-bottom: 2.5px solid black;
+  
+}
+main,
+div.cards {
+  margin: 0 auto;
+  text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+section {
+  background-color: gainsboro;
+  border: 2.5px solid black;
+  margin: 10px auto;
+}
+
+section > h2 {
+  margin: 10px auto;
+  color: black;
+}
+section > h4 {
+  margin: 0 auto;
+}
+section > img {
+  width: 70%;
+  height: auto;
+  margin: 15px auto 5px auto;
+  box-shadow: 2.5px 2.5px 20px black;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
