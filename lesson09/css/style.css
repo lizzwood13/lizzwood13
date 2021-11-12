@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Grechen+Fuemen&display=swap');
+h1, h2, h3, th {
+    font-family: 'Grechen Fuemen', cursive;
+    color: #00008b;
+}
+p, ul, ol, figcaption, label, input {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+p {
+    color: #36454f;
+}
+body {
+    background-color: gainsboro;
+}
+#content {
+    margin: 0 auto;
+    max-width: 850px;
+    background-color: white;
+    padding: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    padding:10px;
+    background-color: #8bd2e1;
+    color:#00008b;
+    text-decoration: none;
+    margin: -1px;
+}
+.active {
+    background-color: white;
+    color: #36454f;
+} 
+#banner {
+    text-align:center;
+    margin:-8px -8px 20px -8px;
+}
+#title {
+    background-color: gainsboro;
+    margin: -15px;
+    color: #00008b;
+    padding: 20px;
+}
+#title img {
+    float: left;
+    padding: 10px;
+}
+#title p {
+    padding:0 0 0 120px;
+}
+nav {
+    background-color: #8bd2e1;
+    margin: -15px;
+    padding: 1px;
+}
+nav a:hover {
+    background-color: #00008b;
+    color: #ffc300;
+}
+picture img {
+    width:100%;
+    height:200px;
+}
+#instagram, #facebook, #linkedin {
+    width:40px;
+    height:40px;
+}
+#location {
+    width: 50%;
+    height: 150px;
+}
+footer {
+    background-color: gainsboro;
+    display:flex;
+    column-gap: 15%;
+    padding: 10px 20px 30px 20px;
+    margin:15px -15px -15px -15px;
+}
+footer div{
+    margin:-15px;
+}
+#footer-bar {
+    padding: 0 20px;
+    margin:-10px;
+    background-color: #8bd2e1;
+    position:fixed;
+    width:100%;
+    left:0;
+    bottom:0;
+    text-align:center;
+}
+.icon {
+    display:none;
+}
+i {
+    color:#36454f;
+}
+.town-cards {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .town-cards section {
+    width: 30%;
+    background-color: #d3d3d3;
+    box-shadow: 5px 5px 10px #36454f;
+  }
+  .town-cards a:visited,
+  .town-cards a:link {
+    text-decoration: none;
+    color: #36454f;
+  }
+  .town-cards section:hover {
+    transform: scale(1.01);
+  }
+  .town-cards section img {
+    width: 100%;
+    height:200px;
+  }
+  .motto {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  section {
+     margin-top: 50px;
+  }
+@media only screen and (max-width:780px) {
+    body {
+        margin:0 0 25px 0;
+    }
+    .topnav a, #location{
+        display: none;
+    }
+    .topnav a.icon {
+      display:block;
+      max-width: 100%;
+      margin:0;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+      position: relative;
+
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    nav{
+        padding:0px;
+    }
+    nav ul {
+        display:block;
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+    nav a {
+        margin:0px;
+    }
+    .town-cards {
+        display: block;
+      }
+      .town-cards section {
+        width: 75%;
+        text-align: left;
+        padding: 2%;
+        padding-bottom:25px;
+        margin: 30px auto;
+      }
+    
+      .town-cards .t-one img,
+      .town-cards .t-three img {
+        width: 60%;
+        float: right;
+      }
+    
+      .town-cards .t-two img {
+        width: 60%;
+        float: left;
+        padding-right: 10px;
+      }
+      footer {
+        text-align:center;
+      }
+      footer div {
+          margin: 0 auto;
+      }
+}
+@media only screen and (max-width: 590px) {
+    #preston-forecast{
+        display: none;
+    }
+    footer {
+        display:grid;
+        grid-template-rows: auto auto;
+        padding-left: 30px;
+    }
+    footer div {
+        grid-row:1;
+    }
+    #instagram, #facebook, #linkedin {
+        display:none;
+    }
+    .town-cards section {
+        text-align: center;
+    }
+    .town-cards .t-one img,
+    .town-cards .t-three img {
+      width: 80%;
+      float: none;
+    }
+    .town-cards .t-two img {
+      width: 80%;
+      float: none;
+    }
+}
