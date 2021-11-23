@@ -11,7 +11,7 @@ p {
     color: #36454f;
 }
 body {
-    background-color: gainsboro;
+    background-color: #d3d3d3;
 }
 #content {
     margin: 0 auto;
@@ -46,7 +46,7 @@ nav ul li a{
     margin:-8px -8px 20px -8px;
 }
 #title {
-    background-color: gainsboro;
+    background-color: #d3d3d3;
     margin: -15px;
     color: #00008b;
     padding: 20px;
@@ -80,7 +80,7 @@ picture img {
     height: 150px;
 }
 footer {
-    background-color: gainsboro;
+    background-color: #d3d3d3;
     padding: 10px 20px 30px 20px;
     margin:15px -15px 0 -15px;
     text-align:center;
