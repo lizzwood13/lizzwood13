@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/wtwlogo.png">
+    <script src="js/script.js" defer></script>
+    <script src="js/lazy-loading.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div id="content">
+        <aside>
+            <p id="banner">
+                Saturday = Preston Pancakes in the Park! 
+                <br>
+                9:00 a.m. Saturday at the city park pavillion.
+            </p>
+        </aside>
+    <header>
+        <div id="title">
+        <img src="images/wtwlogo.png" alt="logo" width="100px">
+        <h1>Whatever the Weather</h1>
+        <p>No matter rain or shine, the weather is here all the time.</p>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11">Home</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11">Preston</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11/sodasprings">Soda Springs</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11/fishhaven">Fish Haven</a></li>
+                <li><a class="active" href="#">Storm Center</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11/gallery">Gallery</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Storm Center
+        </h1>
+        <h2>Please fill out this form to report a storm.</h2>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend><h1>Contact Information</h1></legend>
+                <label>Full Name *</label>
+                    <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
+                <br>
+                <label>Email</label>
+                    <input type="email" name="email" placeholder="placeholder@gmail.com">
+                <br>
+                <label>Phone Number *</label>
+                    <input type="tel" name="tel" required>
+                <br>
+                <label>Zip Code *</label>
+                    <input type="number" name="zip" required>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend><h1>Storm Information</h1></legend>
+                <label>Storm Date *</label>
+                    <input type="date" name="date" required>
+                <div>
+                    <label for="list">Storm Type:</label>
+                      <input list="lists" name="list" id="list"/>
+                      <datalist id="lists">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                      </datalist>
+                    </div>
+  
+                    <label  for="rating">Storm Severity Rating: &nbsp;&nbsp;&nbsp;</label>
+                        <input type="range"  value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id='ratingvalue'>5</span>
+                    <datalist >
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                
+                
+                <div>
+                    <label >Storm Region</label>
+                        
+                        <select name="region">
+                            <option value="select" select disabled>Select Region &#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                </div>
+            </fieldset>
+
+            <fieldset id="danger">
+                <legend><h1>Are you in danger?</h1></legend>
+                <div class="surroundDanger">
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="no">No
+                    </label>
+                    
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="maybe">Maybe
+                    </label>
+                    
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="Yes">Yes
+                    </label>
+                </div>
+                
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend><h1>Additional Information or Comments: </h1></legend>
+                <label>
+                    <textarea name="additional" rows="4" cols="30"></textarea>
+                </label>
+            </fieldset>
+            
+
+            <input type="submit" value="Send Your Storm Report" class="submit">
+        </form>
+      </main>
+    <footer>
+        <div id="contact">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-phone"></i>   (208)607-5851</p>
+        <p><i class="fas fa-envelope"></i>   lizzwood13@gmail.com</p>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    </div>
+    <div id="footer-bar">
+        <p>&copy;<span id="year"></span> | Lizzy Woodruff | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> <span id="time"></span></p>
+    </div>
+</body>
+</html>

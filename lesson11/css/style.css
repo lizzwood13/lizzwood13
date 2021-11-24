@@ -3,6 +3,7 @@
 h1, h2, h3, th {
     font-family: 'Grechen Fuemen', cursive;
     color: #00008b;
+
 }
 p, ul, ol, td {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -107,6 +108,7 @@ nav a:hover {
     padding: 10px 20px;
     margin:15px 0;
     overflow:hidden;
+    font-size: 1.2em;
 }
 #preston-article img {
     max-width:25%;
@@ -156,6 +158,40 @@ td {
     margin: 10px;
     background-color:white;
 }
+.town-cards {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .town-cards section {
+    width: 30%;
+    background-color: #d3d3d3;
+    box-shadow: 5px 5px 10px #36454f;
+  }
+  .town-cards a:visited,
+  .town-cards a:link {
+    text-decoration: none;
+    color: #36454f;
+  }
+  .town-cards section:hover {
+    transform: scale(1.01);
+  }
+  .town-cards section img {
+    width: 100%;
+    height:200px;
+  }
+  .motto {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  section {
+     margin-top: 50px;
+  }
 @media only screen and (max-width:780px) {
     body {
         margin:0 0 25px 0;
@@ -201,6 +237,28 @@ td {
         margin: 0 auto;
         text-align:center;
     }
+    .town-cards {
+        display: block;
+      }
+      .town-cards section {
+        width: 75%;
+        text-align: left;
+        padding: 2%;
+        padding-bottom:25px;
+        margin: 30px auto;
+      }
+    
+      .town-cards .t-one img,
+      .town-cards .t-three img {
+        width: 60%;
+        float: right;
+      }
+    
+      .town-cards .t-two img {
+        width: 60%;
+        float: left;
+        padding-right: 10px;
+      }
 }
 @media only screen and (max-width: 590px) {
     #preston-forecast{
@@ -224,5 +282,17 @@ td {
     }
     #preston-ws {
         text-align: center;
+    }
+    .town-cards section {
+        text-align: center;
+    }
+    .town-cards .t-one img,
+    .town-cards .t-three img {
+      width: 80%;
+      float: none;
+    }
+    .town-cards .t-two img {
+      width: 80%;
+      float: none;
     }
   }

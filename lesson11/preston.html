@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/wtwlogo.png">
+    <script src="js/script.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div id="content">
+        <aside>
+            <p id="banner">
+                Saturday = Preston Pancakes in the Park! 
+                <br>
+                9:00 a.m. Saturday at the city park pavillion.
+            </p>
+        </aside>
+    <header>
+        <div id="title">
+        <img src="images/wtwlogo.png" alt="logo" width="100px">
+        <h1>Whatever the Weather</h1>
+        <p>No matter rain or shine, the weather is here all the time.</p>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11">Home</a></li>
+                <li><a class="active" href="#">Preston</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11/sodasprings">Soda Springs</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11/fishhaven">Fish Haven</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11/stormcenter">Storm Center</a></li>
+                <li><a href="https://lizzwood13.github.io/lizzwood13/lesson11/gallery">Gallery</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="pancakes">
+
+        </div>
+        <h2>Preston</h2>
+        <div id="preston-summary">
+            <img id="hero" src="images/preston.jpg" alt="larger hero">
+            <div id="preston-ws">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>High:<span id="temp"></span>F&deg;</p>
+                <p>Wind Chill: <span id="windchill"></span>F&deg;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span> mph</p>
+            </div>
+        </div>
+        <div id="preston-forecast">
+            <h3>Five Day Forecast</h3>
+            <table>
+                <tr>
+                    <th><span id="day1">Sat</span></th>
+                    <th><span id="day2">Sun</span></th>
+                    <th><span id="day3">Mon</span></th>
+                    <th><span id="day4">Tue</span></th>
+                    <th><span id="day5">Wed</span></th>
+                </tr>
+                <tr>
+                    <td><span id="imagesrc1"></span> <img id="icon1"></td>
+                    <td><span id="imagesrc2"></span> <img id="icon2"></td>
+                    <td><span id="imagesrc3"></span> <img id="icon3"></td>
+                    <td><span id="imagesrc4"></span> <img id="icon4"></td>
+                    <td><span id="imagesrc5"></span> <img id="icon5"></td>
+                </tr>
+                <tr>
+                    <td><span id="temp1"></span> F&#176; </td> 
+                    <td><span id="temp2"></span> F&#176; </td> 
+                    <td><span id="temp3"></span> F&#176; </td> 
+                    <td><span id="temp4"></span> F&#176; </td> 
+                    <td><span id="temp5"></span> F&#176; </td> 
+                </tr>
+            </table>
+           </div>
+        <div id="preston-article">
+            <img src="images/article.jpg" alt="picture of the sky">
+            <h3>Festival of Lights | Wikipedia</h3>
+            <p>Each year Preston holds the "Idaho Festival of Lights", which starts the day after Thanksgiving and goes until December 31. The festival was started by two local business men (Wayne Bell and Walter Ross) along with many other community organizations to help celebrate Christmas within the community. The festival consists of a lighted parade, fireworks, and displays in the city park. The merchants along the main street of Preston have their store fronts decorated with Christmas lights during the festival.
+                A key event of the festival is the International Bed Race, which is held on the Saturday following Thanksgiving on the main street of Preston. Additional events are a kids' parade and free movie.</p>
+        </div>
+    </main>
+    <footer>
+        <img id="location" src="images/map.jpg" alt="location map">
+        <div id="contact">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-phone"></i>   (208)607-5851</p>
+        <p><i class="fas fa-envelope"></i>   lizzwood13@gmail.com</p>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    </div>
+    <div id="footer-bar">
+        <p>&copy;<span id="year"></span> | Lizzy Woodruff | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | Weather from <a href="https://openweathermap.org">Open Weather Map</a> <span id="time"></span></p>
+    </div>
+</body>
+</html>
