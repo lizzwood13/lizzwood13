@@ -119,7 +119,7 @@ picture img {
 footer {
     background-color: #d3d3d3;
     padding: 10px 20px 30px 20px;
-    margin:15px -15px 0 -15px;
+    margin:15px -15px -15px -15px;
     text-align:center;
 }
 footer div{
