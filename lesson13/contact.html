@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="icon" type="image/x-icon" href="images/templelogo.png">
+    <script src="js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div id="title">
+        <img src="images/templelogo.png" alt="logo" width="70px">
+        <h1>Temple Inn and Suites</h1>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+    <main id="contactpage">
+        <form method="get" action="thanks.html">
+            <div id="sendusamessage">
+            <fieldset >
+                <legend><h1>Send us a message!</h1></legend>
+                <label>Full Name</label>
+                    <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
+                <br>
+                <label>Email</label>
+                    <input type="email" name="email" placeholder="placeholder@gmail.com" required>
+                <br>
+                <label>Phone Number</label>
+                    <input type="tel" name="tel" required>
+                <br>
+                <label>Message</label>
+                <textarea name="additional" rows="4" cols="30"></textarea>
+            </br>
+                <input type="submit" value="Send Message" class="submit">
+            </fieldset>
+            </div>
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013225!2d-77.09772048478816!3d38.98325177955755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1638747588078!5m2!1sen!2sus" width="400" height="322" allowfullscreen="" loading="lazy" alt="Google Map"></iframe>
+        </div>
+      </main>
+      <footer id="footer-bar">
+        <p>&copy;<span id="year"></span> | Lizzy Woodruff | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> <span id="time"></span></p>
+    </footer>
+    </div>
+</body>
+</html>

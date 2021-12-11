@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="icon" type="image/x-icon" href="images/templelogo.png">
+    <script src="js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div id="title">
+        <img src="images/templelogo.png" alt="logo" width="70px">
+        <h1>Temple Inn and Suites</h1>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a class="active" href="#">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+    <main id="reservationspage">
+        <h2>
+            Reservations
+        </h2>
+        <p>Please fill out this form to reserve a room. All information is required.</p>
+
+        <form method="get" action="thanks.html">
+            <div id="contactform">
+            <fieldset id="contact1">
+                <legend><h1>Contact Information</h1></legend>
+                <label>Full Name</label>
+                    <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
+                <br>
+                <label>Email</label>
+                    <input type="email" name="email" placeholder="placeholder@gmail.com" required>
+                <br>
+                <label>Phone Number</label>
+                    <input type="tel" name="tel" placeholder="(123)456-7890" required>
+                <br>
+                <label>Home State/Country</label>
+                    <input type="state" name="state" required>
+                
+            </fieldset>
+
+            <fieldset id="contact2">
+                <legend><h1>Rooming Information</h1></legend>
+                <label>Trip Dates</label>
+                    <input type="date" name="date" required>
+                    <input type="date" name="date" required>
+                <div>
+                    <label for="suitetype">Suite Type</label>
+                    <datalist id="suitetype">
+                        <option value="1 King"></option>
+                        <option value="2 Full"></option>
+                        <option value="Family Suite"></option>
+                    </datalist>
+                    <select name="suitroom" id="suitroom" required>
+                        <option value="" disabled selected>Select Suite Type</option>
+                        <option value="1 King">1 King</option>
+                        <option value="2 Full">2 Full</option>
+                        <option value="Family Suite">Family Suite</option>
+                    </select>
+                    </div>
+
+                    <label for="list">Number of Rooms</label>
+                    <input type="number" name="rooms" required>
+            </fieldset>
+            <fieldset id="contact3">
+                <legend><h1>Additional Information or Comments: </h1></legend>
+                <label>
+                    <textarea name="additional" rows="4" cols="30"></textarea>
+                </label>
+            </fieldset>
+            </div>
+
+            <input type="submit" value="Reserve your room(s)" class="submit">
+        </form>
+      </main>
+      <footer id="footer-bar">
+        <p>&copy;<span id="year"></span> | Lizzy Woodruff | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> <span id="time"></span></p>
+    </footer>
+    </div>
+</body>
+</html>

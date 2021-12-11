@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Open+Sans:wght@300&display=swap');
+h1, h2, h3, h4, th {
+    font-family: $headers;
+    color: $accentColor1;
+}
+p, ul, ol, td, figcaption, label, input {
+    font-family:$bodyCopy;
+    color: $bodyCopyColor;
+}
+
+body {
+    background-color: $secondaryColor;
+}
+#content {
+    margin: 0px auto 20px auto;
+    max-width: 850px;
+    background-color: $secondaryColor;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    padding:10px;
+    background-color: $accentColor2;
+    color:$bodyCopyColor;
+    text-decoration: none;
+
+}
+.active {
+    background-color: $secondaryColor;
+    color: $accentColor1;
+} 
+#title {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    padding: 20px;
+    padding-left: 110px;
+}
+#title img {
+    float: left;
+    padding-right:20px;
+}
+#title h1 {
+    padding-top: 40px;
+    color: $secondaryColor;
+}
+nav {
+    background-color: $primaryColor;
+}
+nav a:hover {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+}
+#instagram, #facebook, #linkedin {
+    width:40px;
+    height:40px;
+}
+#footer-bar {
+    padding: 0 20px;
+    margin:-10px;
+    background-color: $accentColor1;
+    position:fixed;
+    width:100%;
+    left:0;
+    bottom:0;
+    text-align:center;
+}
+#footer-bar a {
+    color:$bodyCopyColor;
+}
+#footer-bar a:hover {
+    color: $secondaryColor;
+}
+.icon {
+    display:none;
+}
+i {
+    color:$accentColor1;
+}
+figure {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+form {
+    line-height: 200%;
+}
+label {
+    display:inline-block;
+    width: 150px;
+}
+#weddingpage h1 {
+    text-align:center;
+}
+.submit {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    border-radius: 10px;
+    margin:20px auto;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+}
+.submit:hover {
+    background-color: $accentColor2;
+    color: $bodyCopyColor;
+}
+.thanks {
+    text-align:center;
+    margin: 100px auto;
+}
+fieldset {
+    border: 1px solid $accentColor1;
+}
+#contactform {
+    display:flex;
+    h1 {
+        font-size: 1.5em;
+    }
+}
+#calltoaction {
+    text-align:center;
+    a {
+        color:$primaryColor;
+    }
+}
+#contact3 {
+    font-size:.8em;
+}
+iframe {
+    border:1px solid $accentColor1;
+    margin-top:37px;
+}
+#contactpage {
+    display: flex;
+}
+#bonus {
+    display:inline-flex;
+    a{
+        color: $accentColor1;
+    }
+    a:hover{
+        color:$primaryColor;
+    }
+}
+#rooms {
+    display:inline-flex;
+}
+#rooms fieldset {
+    width:30%;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+.contactinfo {
+    text-align: center;
+    line-height: 1em;
+}
+  section {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: $accentColor2;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+  }
+  
+  section img {
+    width: 100%;
+    border: 2px solid white;
+  }
+  
+  .idsummary {
+    text-align: center;
+    background-color: $secondaryColor;
+    border: 1px solid black;
+    padding: 2em;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+  }
+  
+  .idsummary h3 {
+    text-align: left;
+  }
+  
+  table {
+    background-color: $accentColor2;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 13px 40px;
+    color: black;
+    margin: auto;
+    table-layout: fixed;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    overflow: hidden;
+  }
+  
+  td {
+    padding: 0.5rem;
+  }
+  

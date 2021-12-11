@@ -8,7 +8,7 @@ var m_names = ["January", "February", "March",
 var d_names = ["Sunday","Monday", "Tuesday", "Wednesday", 
 "Thursday", "Friday", "Saturday"];
 var myDate = new Date();
-myDate.setDate(myDate.getDate()+7);
+myDate.setDate(myDate.getDate());
 var curr_date = myDate.getDate();
 var curr_month = myDate.getMonth();
 var curr_day  = myDate.getDay();
