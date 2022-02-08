@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$blue: #6495ed;
+$tan: #deb887;
+$cream: #faebd7;
+
+h1,
+h2 {
+  font-family: 'Lora', serif;
+}
+
+p,
+div {
+  font-family: Helvetica, Arial sans-serif;
+}
+body {
+  background-color: $blue;
+}
+
+h1 {
+  text-align: right;
+}
+header {
+  background-color: $blue;
+  float: left;
+  position: relative;
+  width: 20%;
+  padding: 2.5%;
+
+  a, a:visited {
+  color: $cream;
+  text-decoration: none;
+  }
+  a:active {
+  color: $tan;
+  }
+  a:hover {
+  color: white;
+  text-decoration: underline;
+  }
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+main {
+  background-color: $cream;
+  margin-left: 25%;
+  padding: 2.5%;
+}
+
+h2 { 
+  a, a:visited {
+  color: black;
+  text-decoration: none;
+  }
+  a:active {
+  color: $tan;
+  }
+  a:hover {
+  color: $blue;
+  text-decoration: underline;
+  }
+}
+
+p {
+  a, a:visited {
+  color: $blue;
+  text-decoration: none;
+  }
+  a:active {
+  color: $tan;
+  }
+  a:hover {
+  text-decoration: underline;
+  }
+}
+
+article {
+  background-color: white;
+  padding: 20px;
+  margin: 30px 50px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    float: none;
+    width: 100%;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  article {
+    margin: 30px 20px;
+  }
+
+  h1 {
+    padding-right: 30px;
+  }
+
+  nav ul {
+    padding-right: 30px;
+  }
+
+  hr {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
