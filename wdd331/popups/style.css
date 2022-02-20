@@ -1,0 +1,56 @@
+div {
+  opacity: 0;
+}
+div:hover {
+  animation: 0.5s spring ease-in;
+  opacity: 1;
+}
+.box {
+  border: 3px solid black;
+  width: 50px;
+}
+.square {
+  background-color: greenyellow;
+  width: 200px;
+  height: 50px;
+  border-radius: 10%;
+  position: relative;
+}
+.square::after {
+  content: '';
+  border-top: 20px solid greenyellow;
+  border-left: 0 solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  left: 20px;
+  bottom: -40px;
+}
+.reversed::after {
+  left: initial;
+  right: 20px;
+  border-left: 30px solid transparent;
+  border-right: 0;
+}
+p {
+  padding: 10px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10em;
+  opacity: 0;
+}
+p:hover {
+  opacity: 1;
+  animation: type 3s steps(60, end);
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes spring {
+  0% {
+    transform: scale3d(0.9, 0.9, 1);
+  }
+}
