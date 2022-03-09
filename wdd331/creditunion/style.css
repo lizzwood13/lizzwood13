@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+aside {
+  background-color: green;
+  color: white;
+  position: relative;
+  margin: -8px;
+  padding: 10px 20%;
+  display: inline-flex;
+  font-size: small;
+}
+aside ul {
+  display: inline-flex;
+}
+aside li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-flex;
+}
+aside a:hover {
+  background-color: gray;
+}
+div {
+  margin: auto;
+  text-align: center;
+}
+aside div {
+  display: flex;
+}
+.rates div {
+  display: inline-block;
+}
+span {
+  font-size: 3em;
+}
+.whitebox {
+  display: flex;
+  gap: 30px;
+  margin: 0 200px;
+}
+.whitebox {
+  text-transform: none;
+  color: green;
+}
+.rates {
+  background: url(greenpicture.jpg) center top/cover no-repeat fixed;
+  color: white;
+  margin: -8px;
+}
+
+.rates button {
+  padding: 20px;
+  height: 90px;
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  color: white;
+  background-color: green;
+}
+.rates button:hover,
+.rates button.active {
+  color: green;
+  background-color: #ffffff;
+  border-radius: 90px;
+  color: green;
+  background-color: white;
+}
+button,
+.rates .learn {
+  height: 50px;
+  width: 150px;
+  text-transform: capitalize;
+  background-color: white;
+  border: solid 2px orangered;
+  color: orangered;
+  border-radius: 50px;
+  font-size: 1em;
+}
+button:hover {
+  color: white;
+  background-color: orangered;
+}
+
+aside button,
+.rates .learn {
+  color: white;
+  background-color: green;
+  border: solid 2px white;
+}
+
+aside button:hover,
+.rates .learn:hover {
+  color: green;
+  background-color: white;
+}
+
+.smallPosts {
+  color: #555759;
+  border-color: #555759;
+}
+.smallPosts a {
+  color: inherit;
+}
+.smallPosts .dateWrap {
+  color: inherit !important;
+  border-color: inherit !important;
+}
+.smallPosts:hover {
+  color: #24b200;
+  border-color: #24b200;
+}
+.smallPosts:focus-within {
+  color: #fd620d;
+}
+
+#ebranch-login-btn-ios {
+  text-align: right;
+  padding: 0.85em 2.5em;
+  margin-left: 12.5em;
+}
+
+#ebranch-login-username {
+  height: 45px;
+  margin-left: 0.75em;
+  color: #555759;
+  background: #f2f2f2;
+  margin: 0px;
+  font-size: 13px;
+  border-bottom: 1px solid lightgrey;
+}
+
+#headerLogin input[type='password'] {
+  height: 45px;
+  margin: 0;
+  color: #1c8900;
+  font-size: 13px;
+  line-height: 1;
+  background: #fff;
+  letter-spacing: 0px;
+}
+
+/* Here is the popup login form - hidden by default */
+.form-popup {
+  position: absolute;
+  right: 0px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  display: none;
+  background: #f2f2f2;
+}
+
+/* container for our input fields */
+.form-container input[type='text'],
+.form-container input[type='password'] {
+  width: 100%;
+
+  font-size: 13px;
+  background: #f2f2f2;
+  border-bottom: 1.5px solid lightgrey;
+}
+
+/* Inputs get focus to show user where they are currently  */
+.form-container input[type='text']:focus,
+.form-container input[type='password']:focus,
+#ebranch-login-username:focus {
+  background-color: white;
+  outline: none;
+}
+
+/* This is the style for the submit/login button */
+.form-container .btn {
+  background-color: #555759;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+/* Add basic hover effects to buttons */
+.form-container .btn:hover,
+.btn:focus,
+.open-button:hover {
+  background-color: #fe620d;
+}
+
+/* Create a padlock image that floats to the right of the LOG IN text */
+.menu-padlock {
+  color: white;
+  position: relative;
+  z-index: 999;
+  top: 3px;
+  font-size: 20px;
+}
+
+/* Creates a box to close the login menu */
+#close-menu {
+  color: #555759;
+  width: 15%;
+  height: 22%;
+  position: absolute;
+  top: -26%;
+  right: 2%;
+  border-radius: 2px;
+}
+
+/* Changes the color of the "X" for better user experience */
+#close-menu:hover {
+  color: #fe620d;
+  cursor: pointer;
+}
+
+/* Creates a text alignment for "Forgot username or password?" and "Register for online banking"*/
+.textAlignment {
+  text-align: left;
+  color: #1c8900;
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+/*Fix the input placehoider for the username and password on *Chrome, *Firefox, *Edge etc...*/
+::-webkit-input-placeholder {
+  color: #555759;
+  font-weight: 100;
+}
+.ninja-forms-form:-moz-placeholder,
+.ninja-forms-form::-moz-placeholder {
+  color: #555759;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #555759;
+}
+
+#enrollToday {
+  right: 252px;
+  text-transform: none;
+  background: #1c8900;
+  border-top: 1px solid #24b200;
+  width: 102px;
+}
+
+#enrollToday:hover,
+#enrollToday:focus {
+  background-color: #555759;
+  border-top: 1px solid #24b200;
+  margin-top: 0;
+}
+
+#ebranch-login-btn-ios:hover {
+  background-color: #555759;
+}
+:root {
+  --white: #fff;
+  --red: #e74c3c;
+  --black: #000;
+  --img-color: #ededed;
+  --overlay: rgba(0, 0, 0, 0.75);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 300%;
+  height: auto;
+  position: static;
+  margin-left: -350px;
+  background-color: var(--img-color);
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type='radio'] {
+  position: absolute;
+  bottom: 0;
+  left: -9999px;
+}
+
+.container {
+  max-width: 450px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.featured-wrapper {
+  position: relative;
+}
+
+.featured-wrapper .featured-list {
+  display: grid;
+}
+
+.featured-wrapper .featured-list li {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.featured-wrapper .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.featured-wrapper .dots li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.featured-wrapper .dots label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  transition: background 0.25s;
+}
+
+.featured-wrapper .dots label:hover {
+  background: currentColor;
+}
+
+[id='image1']:checked ~ .container .featured-list li:nth-child(1),
+[id='image2']:checked ~ .container .featured-list li:nth-child(2),
+[id='image3']:checked ~ .container .featured-list li:nth-child(3) {
+  opacity: 1;
+}
+
+[id='image1']:checked ~ .container .arrows [for='image3']::before,
+[id='image2']:checked ~ .container .arrows [for='image1']::before,
+[id='image3']:checked ~ .container .arrows [for='image2']::before {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-prev-slideshow.svg);
+}
+
+[id='image1']:checked ~ .container .arrows [for='image2']::after,
+[id='image2']:checked ~ .container .arrows [for='image3']::after,
+[id='image3']:checked ~ .container .arrows [for='image1']::after {
+  content: '';
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow-next-slideshow.svg);
+}
+
+[id='image1']:checked ~ .container .dots [for='image1'],
+[id='image2']:checked ~ .container .dots [for='image2'],
+[id='image3']:checked ~ .container .dots [for='image3'] {
+  background: currentColor;
+}
+
+[id='image1']:checked ~ .container [for='image1'] .outer,
+[id='image2']:checked ~ .container [for='image2'] .outer,
+[id='image3']:checked ~ .container [for='image3'] .outer {
+  background: var(--overlay);
+}
+
+[id='image1']:checked ~ .container [for='image1'] .inner,
+[id='image2']:checked ~ .container [for='image2'] .inner,
+[id='image3']:checked ~ .container [for='image3'] .inner {
+  opacity: 1;
+  transform: none;
+}

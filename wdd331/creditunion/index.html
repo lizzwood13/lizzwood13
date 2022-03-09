@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Central Credit Union</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7f55318973.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+    <aside class="top-header">
+        <ul>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Rates</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Espanol</a></li>
+        </ul>
+        <div id="ebranch-login" class="d-1of3 t-1of3 m-all navLogin">
+            <div class="d-2of7 t-2of5 m-1of3 proxReg eBranch" onclick="openForm()">eBranch Login</div>
+            <div class="d-5of7 t-3of5 m-2of3 proxLight nopadding" aria-label="eBranch Login" style="position: relative">
+               <form action="https://myebranch.iccu.com/Authentication/Username" method="post" enctype="application/x-www-form-urlencoded" class="form-container" name="ebranchLogin" autocomplete="off">
+                  <div>
+                    <input aria-label="username" onkeydown="openForm()" onclick="openForm()" id="ebranch-login-username" type="text" style="border-radius: 0;" placeholder="Username" name="UserName">
+                  </div>
+                  <div style="width:100%; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;"class="form-popup" id="ebranch-login-dropdown">
+                       <input aria-label="password" type="password" id="ebranch-login-password" placeholder="Password" style="letter-spacing: 0px;border-bottom: 1.5px solid lightgrey;" name="Password">
+                      <div style="text-align: center">
+                         <button aria-label="log in to eBranch" type="submit" id="ebranch-login-btn" class="btn"><span class="icon-padlock small-icon menu-padlock"></span>LOG IN</button>
+                      </div>
+                      <p aria-label="forgot username or password" id="ebranch-login-forgot" class="textAlignment">Forgot <a href="https://myebranch.iccu.com/ForgotUsername">Username</a> or <a href="https://myebranch.iccu.com/ForgotPassword">Password</a>?</p>
+                      <p aria-label="Register" class="textAlignment"><a onfocusout="closeForm()" href="https://myebranch.iccu.com/Registration">Register for Online Banking</a></p>
+                      <div aria-label="close" id="close-menu" onclick="closeForm()">
+                         <p style="text-align: center;position: absolute;top: 15%;right: 34%;">X</p>
+                      </div>
+                    </div>
+                    </form>
+               </div>
+            </div>
+            <script>
+                function openForm() {
+                      document.getElementById("ebranch-login-dropdown").style.display = "block";
+            }
+            
+                function closeForm() {
+                      document.getElementById("ebranch-login-dropdown").style.display = "none";
+            }
+            </script> 
+        
+    </aside>
+    </header>
+    <main class="content">
+       <div>
+        <input type="radio" id="image1" name="image" checked>
+        <input type="radio" id="image2" name="image">
+        <input type="radio" id="image3" name="image">
+        
+        <div class="container">
+          <div class="featured-wrapper">
+            <ul class="featured-list">
+              <li>
+                <figure>
+                  <img src="https://cdn.iccu.com/inc/uploads/2022/02/mortgage-construction-slider.jpg" alt="">
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="https://cdn.iccu.com/inc/uploads/2022/02/Bitcoin-Slider.jpg" alt="">
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="https://cdn.iccu.com/inc/uploads/2022/02/Rising-Rates-Website-Banner.jpg" alt="">
+                </figure>
+              </li>
+            </ul>
+            <ul class="dots">
+              <li>
+                <label for="image1"></label>
+              </li>
+              <li>
+                <label for="image2"></label>
+              </li>
+              <li>
+                <label for="image3"></label>
+              </li>
+            </ul>
+          </div>
+          </div>
+          </div>
+        <div class="whitebox">
+            <div>
+                <i class="fa-regular fa-user-large"></i>
+                <h3>Become a Member</h3>
+                <p>Want to join the premier Credit Union in Idaho? Want to enjoy the most convenient and exceptional service you expect from your financial institution?</p>
+                <button>JOIN TODAY</button>
+            </div>
+            <div>
+                <i class="fa-regular fa-mobile-screen-button"></i>
+                <h3>VideoChat</h3>
+                <p>Talk face-to-face with a live service agent through your mobile device or desktop. It’s secure and easy to use.<a href="#">Learn more</a></p>
+                <button>VIDEOCHAT</button>
+            </div>
+            <div>
+                <i class="fa-regular fa-house-chimney-window"></i>
+                <h3>Apply for a Loan</h3>
+                <p>Loans for any purpose in your life. ICCU can help you build the house of your dreams, buy the car you’ve always wanted or even grow your business.</p>
+                <button>APPLY TODAY</button>
+            </div>
+            <div>
+                <i class="fa-regular fa-earth-americas"></i>
+                <h3>Learn more about ICCU</h3>
+                <p>Idaho Central Credit Union’s mission is “Helping members achieve financial success.” This is the very core of what we do every day.</p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+        <div class="rates">
+            
+            <h2>Daily Rates</h2>
+
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'Visa')" id="defaultOpen">Visa</button>
+              <button class="tablinks" onclick="openTab(event, 'Mortgage')">Mortgage</button>
+              <button class="tablinks" onclick="openTab(event, 'Auto')">Auto</button>
+              <button class="tablinks" onclick="openTab(event, 'Savings')">Savings</button>
+            </div>
+            
+            <div id="Visa" class="visa tabcontent">
+                    <div>
+                            <h4>Premier Rewards</h4>
+                            <p>As low as <br><span>12.74%</span><br> Variable APR</p>
+                        </div>
+                        <div>
+                            <h4>Rewards</h4> 
+                            <p>As low as <br><span>8.74%</span><br> Variable APR</p>       
+                        </div>
+                        <div>
+                            <h4>Platinum</h4>  
+                            <p>As low as <br><span>7.74%</span><br> Variable APR</p>      
+                        </div>
+                        <div>
+                            <h4>Fixed Platinum</h4>
+                            <p>As low as <br><span>13.99%</span><br> Variable APR</p>
+                        </div>
+                    </div>
+            
+            <div id="Mortgage" class="mortgage tabcontent">
+                        <div>
+                            <p>As low as <br><span>3.125%</span><br> 15 year fixed rate - Purchase <br><span>3.408%APR</span></p>
+                        </div>
+                        <div> 
+                            <p>As low as <br><span>3.125%</span><br> 15 year fixed rate - Refinance <br><span>3.408%APR</span></p>       
+                        </div>
+                        <div>
+                            <p>As low as <br><span>3.875%</span><br> 30 year fixed rate - Purchase <br><span>4.039%APR</span></p>      
+                        </div>
+                        <div>
+                            <p>As low as <br><span>3.875%</span><br> 30 year fixed rate - Refinance <br><span>4.039%APR</span></p>
+                        </div>
+            </div>
+            
+            <div id="Auto" class="auto tabcontent">
+            <div>
+                            <p>As low as <br><span>2.190%</span><br> 36 Month APR <br> 2019 or newer</p>
+                        </div>
+                        <div>
+                            <p>As low as <br><span>2.640%</span><br> 48 Month APR<br> 2019 or newer</p>       
+                        </div>
+                        <div> 
+                            <p>As low as <br><span>2.590%</span><br> 36 Month APR<br> 2016-2018</p>      
+                        </div>
+                        <div>
+                            <p>As low as <br><span>2.840%</span><br> 48 Month APR<br> 2016-2018</p>
+                        </div>
+            </div>
+            
+            <div id="Savings" class="savings tabcontent">
+                        <div>
+                            <p>Up to <br><span>0.050%APY</span><br> Share Savings</p>
+                        </div>
+                        <div>
+                            <p>Up to <br><span>0.150%APY</span><br> Youth Savings</p>       
+                        </div>
+                        <div> 
+                            <p>Up to <br><span>0.150%APY</span><br> Money Market Savings</p>      
+                        </div>
+            </div>
+            <button class="learn">Learn More</button>
+            <script>
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+            </script>
+        </div>
+
+    </div>
+    </main>
+</body>
+</html>
