@@ -1,0 +1,87 @@
+
+body{
+    margin: 0 auto;
+    text-transform:uppercase;
+    font-family: sans-serif;
+}
+nav {
+    text-align: center;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    border: 1px solid lightgray;
+    button {
+        display: inline-block;
+        padding: 20px 5%;
+        min-width: 200px;
+        border:none;
+        background-color: white;
+        &:hover {
+            color: red;
+            border-bottom:3px solid red;
+        }
+    }
+}
+.companiesdrop:hover {
+    border-bottom:none;
+}
+.dropdown {
+    position:relative;
+    display:inline-block;
+    text-align: center;
+    &:hover .tabs{
+        display:block;
+    }
+    .tabs {
+        display:none;
+        position: absolute;
+        z-index:1;
+        a {
+            text-decoration: none;
+            display:block;
+            padding: 10px 30px;
+            background-color: #fadadd;
+            color: black;
+            &:hover {
+                color:red;
+            }
+        }
+    }
+}
+svg.virgin {
+    position: relative;
+    left:35%;
+}
+.triangle {
+    border-top: 60px solid transparent;
+    border-left: 10 solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 30px solid white;
+    position: absolute;
+    left: 105px;
+
+}
+.topnav a {
+    display:none;
+}
+.topnav a.icon {
+    float: left;
+    display: block;
+    padding: 20px 40px 20px 30px;
+    color: red;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(211, 211, 211, 0.405));
+  }
+
+.topnav.responsive {
+    position: relative;
+}
+  .topnav.responsive a.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
